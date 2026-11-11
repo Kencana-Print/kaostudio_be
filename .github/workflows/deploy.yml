@@ -1,9 +1,13 @@
 name: Deploy Backend to VPS
 
+# Dinonaktifkan sementara dari auto-trigger
+# on:
+#   push:
+#     branches:
+#       - main # Workflow akan berjalan otomatis setiap ada push ke branch main
+
 on:
-  push:
-    branches:
-      - main # Workflow akan berjalan otomatis setiap ada push ke branch main
+  workflow_dispatch:
 
 jobs:
   deploy:

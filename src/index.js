@@ -34,7 +34,7 @@ app.get("/health", (req, res) => {
     return successResponse(
         res,
         { timestamp: new Date() },
-        "API KaoStudio Ready",
+        "API KAOSANstudio Ready",
     );
 });
 
